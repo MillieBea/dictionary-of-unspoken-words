@@ -4,53 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gochi+Hand&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gochi+Hand&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&family=Patrick+Hand+SC&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
     <title>AI Dictionary of Unspoken Words Generator</title>
   </head>
   <body>
-    <header>
-      <h1>The AI Dictionary of Unspoken Words</h1>
-    </header>
-    <main>
-      <form>
-        <label for="feeling">Describe the unnamed feeling:</label>
+    <div class="container">
+      <header>
+        <h1>Unspoken Words</h1>
+        <h2>- THE AI DICTIONARY -</h2>
+      </header>
+      <main>
+        <label class="description">Describe the unnamed feeling:</label>
         <br />
-        <input
-          id="feeling"
-          type="text"
-          placeholder="When a song I forgot existed finds me and ruins my whole day..."
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <br />
-        <input type="submit" value="COIN NEW WORD" />
-      </form>
-      <div>
-        Melanbust (n.)
-        <br />
-        A musical ambush that excavates buried grief. From
-        <em> melancholy + ambush. </em>
-        <br />
-        <em
-          >"The Spotify shuffle melanbust left him crying into past at 3pm."</em
+        <form>
+          <input
+            id="feeling"
+            type="text"
+            placeholder="When a song I forgot existed finds me and ruins my whole day..."
+            autofocus
+            required
+            autocomplete="off"
+            class="feeling"
+          />
+          <br />
+          <input type="submit" value="COIN NEW WORD" class="new-word-button" />
+        </form>
+        <div class="new-word-definition">
+          <div class="new-word">Melanbust (n.)</div>
+          <br />
+          <div class="definition">
+            A musical ambush that excavates buried grief. From
+            <em> melancholy + ambush. </em>
+          </div>
+          <br />
+          <div class="example">
+            <em
+              >"The Spotify shuffle melanbust left him crying into pasta at
+              3pm."</em
+            >
+          </div>
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/MillieBea target=_blank">Milena</a> and is
+        <a
+          href="https://github.com/MillieBea/dictionary-of-unspoken-words"
+          target="_blank"
+          >open-sourced on Github</a
         >
-      </div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/MillieBea target=_blank">Milena</a> and is
-      <a
-        href="https://github.com/MillieBea/dictionary-of-unspoken-words"
-        target="_blank"
-        >open-sourced on Github</a
-      >
-      and is hosted on
-      <a
-        href="https://ai-dictionary-of-unspoken-words.netlify.app/"
-        target="_blank"
-        >Netlify</a
-      >
-    </footer>
+        and is hosted on
+        <a
+          href="https://ai-dictionary-of-unspoken-words.netlify.app/"
+          target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
