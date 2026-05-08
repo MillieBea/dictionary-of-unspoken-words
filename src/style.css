@@ -10,7 +10,7 @@ body {
 }
 a {
   color: #2c2420;
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Gochi Hand";
   font-weight: 400;
 }
@@ -24,13 +24,13 @@ a {
 }
 
 header {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 h1 {
-  font-family: "Gochi Hand", cursive;
-  font-size: 105px;
-  font-weight: 500;
+  font-family: "Schoolbell", cursive;
+  font-size: 110px;
+  font-weight: 700;
   text-align: center;
   color: #2c2420;
   margin-top: -4px;
@@ -51,7 +51,7 @@ h2 {
 
 form {
   padding: 30px;
-  background-color: white;
+  background-color: #f8f6f2;
   border-radius: 16px;
   display: flex;
   box-shadow: 0px 20px 60px #2c2420;
@@ -95,7 +95,7 @@ form {
 .new-word-definition {
   font-family: Cormorant Garamond;
   background-color: #ede9e3;
-  padding: 20px;
+  padding: 30px;
   line-height: 20px;
   box-shadow: 0px 20px 60px #2c2420;
   border-radius: 18px;
@@ -111,10 +111,11 @@ form {
 .example {
   font-size: 18px;
   font-weight: 400;
+  font-style: italic;
 }
 footer {
   text-align: center;
-  font-family: "Gochi Hand";
-  font-size: 16px;
+  font-family: "Patrick Hand SC";
+  font-size: 20px;
   margin-top: 30px;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,6 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gochi+Hand&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&family=Patrick+Hand+SC&family=Raleway:ital,wght@0,100..900;1,100..900&family=Schoolbell&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -45,9 +52,8 @@
       <main>
         <label class="description">Describe the unnamed feeling:</label>
         <br />
-        <form>
+        <form id="word-generator-form">
           <input
-            id="feeling"
             type="text"
             placeholder="When a song I forgot existed finds me and ruins my whole day..."
             autofocus
@@ -59,19 +65,11 @@
           <input type="submit" value="COIN NEW WORD" class="new-word-button" />
         </form>
         <div class="new-word-definition">
-          <div class="new-word">Melanbust (n.)</div>
+          <div class="new-word" id="word"></div>
           <br />
-          <div class="definition">
-            A musical ambush that excavates buried grief. From
-            <em> melancholy + ambush. </em>
-          </div>
+          <div class="definition" id="definition"></div>
           <br />
-          <div class="example">
-            <em
-              >"The Spotify shuffle melanbust left him crying into pasta at
-              3pm."</em
-            >
-          </div>
+          <div class="example" id="example"></div>
         </div>
       </main>
       <footer>
@@ -82,7 +80,7 @@
           target="_blank"
           >open-sourced on Github</a
         >
-        and is hosted on
+        and hosted on
         <a
           href="https://ai-dictionary-of-unspoken-words.netlify.app/"
           target="_blank"
