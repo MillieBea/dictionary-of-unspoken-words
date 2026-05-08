@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,12 +61,14 @@
             required
             autocomplete="off"
             class="feeling"
+            id="user-instructions"
           />
           <br />
           <input type="submit" value="COIN NEW WORD" class="new-word-button" />
         </form>
         <div class="new-word-definition">
           <div class="new-word" id="word"></div>
+
           <br />
           <div class="definition" id="definition"></div>
           <br />
