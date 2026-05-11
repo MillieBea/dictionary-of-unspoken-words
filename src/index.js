@@ -69,7 +69,7 @@ function generateWordAndDefinitionAndExample(event) {
 
   newWordElement.innerHTML = `
   <span class="loading-message">
-    🔎 Consulting the etymology archives about: ${instructionsInput.value}...
+    🔎 Consulting the etymology archives for the feeling of: ${instructionsInput.value}...
   </span>
 `;
   newWordElement.classList.add("ink-bleed");
