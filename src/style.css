@@ -1,6 +1,6 @@
 body {
   background: rgba(10, 10, 10, 0.12);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(4px);
   border: 1px solid rgba(242, 215, 169, 0.15);
   color: #2c2420;
   font-family: Inter;
@@ -28,8 +28,8 @@ a {
     0 10px 25px rgba(0, 0, 0, 0.55),
     0 0 40px rgba(0, 0, 0, 0.4),
     0 0 150px rgba(0, 0, 0, 0.85);
-  font-size: 16px;
-  font-family: IBM Plex Mono;
+  font-size: 22px;
+  font-family: "Patrick Hand SC";
   font-weight: 400;
 }
 .container {
@@ -118,10 +118,14 @@ h2 {
   color: rgba(248, 245, 241, 0.72);
   margin-top: -22px;
   text-shadow:
-    0 2px 0 rgba(0, 0, 0, 0.6),
-    0 0 8px rgba(0, 0, 0, 0.45),
-    0 0 18px rgba(0, 0, 0, 0.35),
-    0 0 30px rgba(212, 169, 95, 0.08);
+    0 -1px 1px rgba(255, 255, 255, 0.18),
+    0 1px 2px rgba(255, 255, 255, 0.08),
+    0 3px 6px rgba(0, 0, 0, 0.75),
+    0 10px 18px rgba(0, 0, 0, 0.85),
+    0 0 28px rgba(0, 0, 0, 0.85),
+    0 0 42px rgba(242, 232, 214, 0.15);
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.08))
+    drop-shadow(0 0 22px rgba(0, 0, 0, 0.75));
 }
 
 h2 {
@@ -148,15 +152,16 @@ h2 {
   margin-top: 2px;
   margin-bottom: 18px;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 22px;
+  font-size: 28px;
   letter-spacing: 12px;
-  color: rgba(245, 238, 230, 0.75);
+  color: rgba(247, 243, 239, 0.75);
   text-shadow:
-    0 1px 0 rgba(0, 0, 0, 0.7),
-    0 0 12px rgba(255, 255, 255, 0.1),
-    0 0 28px rgba(0, 0, 0, 0.55);
-  opacity: 0.95;
-  filter: blur(0.2px);
+    0 4px 0 rgba(0, 0, 0, 0.9),
+    0 0 10px rgba(0, 0, 0, 0.75),
+    0 0 20px rgba(0, 0, 0, 0.55),
+    0 0 30px rgba(212, 169, 95, 0.08);
+  opacity: 0.75;
+  filter: blur(0.1px);
   transition: all 0.3s ease;
 }
 
@@ -173,8 +178,8 @@ form {
   text-align: center;
   letter-spacing: 5px;
   margin-bottom: -10px;
-  margin-top: 10px;
-  padding: 18px 5px 1px;
+  margin-top: 0px;
+  padding: 8px 5px 1px;
   display: block;
   font-family: "Patrick Hand SC", cursive;
   font-size: 28px;
@@ -322,9 +327,12 @@ form {
   font-weight: 500;
 }
 .example {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   font-style: italic;
+}
+.glyph {
+  font-size: 14px;
 }
 
 footer {
@@ -333,9 +341,9 @@ footer {
   color: rgba(245, 238, 230, 0.72);
   text-shadow:
     0 3px 0 rgba(0, 0, 0, 0.85),
-    0 3px 10px rgba(0, 0, 0, 0.65),
+    0 3px 10px rgba(0, 0, 0, 0.75),
     0 10px 25px rgba(0, 0, 0, 0.55),
-    0 0 50px rgba(0, 0, 0, 0.5),
+    0 0 50px rgba(0, 0, 0, 0.6),
     0 0 150px rgba(0, 0, 0, 0.85);
   font-size: 20px;
   margin-top: 30px;
