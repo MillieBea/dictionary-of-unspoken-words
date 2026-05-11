@@ -156,12 +156,10 @@ h2 {
   letter-spacing: 12px;
   color: rgba(247, 243, 239, 0.75);
   text-shadow:
-    0 4px 0 rgba(0, 0, 0, 0.9),
-    0 0 10px rgba(0, 0, 0, 0.75),
-    0 0 20px rgba(0, 0, 0, 0.55),
-    0 0 30px rgba(212, 169, 95, 0.08);
-  opacity: 0.75;
-  filter: blur(0.1px);
+    0 2px 4px rgba(0, 0, 0, 0.75),
+    0 0 12px rgba(0, 0, 0, 0.45),
+    0 0 22px rgba(242, 232, 214, 0.08);
+  opacity: 0.92;
   transition: all 0.3s ease;
 }
 
